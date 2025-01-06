@@ -1,13 +1,88 @@
-body {
+/* Global styles */
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  color: #2c3e50;
+}
+
+h2 {
+  color: #34495e;
+}
+
+h3 {
+  color: #16a085;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  padding: 8px;
+  margin: 6px 0;
+  background-color: #ecf0f1;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+li:nth-child(odd) {
+  background-color: #dfe6e9;
+}
+
+div {
+  margin: 20px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+.card h3 {
+  margin-bottom: 15px;
+}
+
+.card ul {
+  padding-left: 20px;
+}
+
+.card .total {
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+button {
+  background-color: #16a085;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1abc9c;
 }
